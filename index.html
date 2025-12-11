@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocina Gourmet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <h1 class="logo">Cocina Gourmet</h1>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#recetas">Recipes</a></li>
+                <li><a href="#categorias">Categories</a></li>
+                <li><a href="#favoritos">Favorites</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h2>Discover Amazing Recipes</h2>
+                <p>Explore thousands of recipes from around the world</p>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search recipes...">
+                    <button id="searchBtn">Search</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="categorias" class="categorias">
+            <h2>Categories</h2>
+            <div class="categorias-grid" id="categoriasGrid"></div>
+        </section>
+
+        <section id="recetas" class="recetas">
+            <h2>Popular Recipes</h2>
+            <div class="recetas-grid" id="recetasGrid"></div>
+        </section>
+
+        <section id="favoritos" class="favoritos">
+            <h2>My Favorites</h2>
+            <div class="favoritos-grid" id="favoritosGrid">
+                <p class="empty-message">No favorites yet</p>
+            </div>
+        </section>
+    </main>
+
+    <aside id="modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </aside>
+
+    <footer class="footer">
+        <p>&copy; 2024 Cocina Gourmet. Data from <a href="https://www.themealdb.com/" target="_blank">TheMealDB</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
